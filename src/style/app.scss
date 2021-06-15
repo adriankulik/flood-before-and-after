@@ -1,4 +1,40 @@
+// variables
+$background_color: #f5f6fb;
+
+// HTML Tags
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $background_color;
+}
+
+// App
+.photos {
+    
+    background-color: $background_color;
+
+    &__container {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%; // % instead of "vh", because of problems it generates on mobile chrome
+
+        &--normal {
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        &--flood {
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            top: 50%;
+        }
+    }
+
 }

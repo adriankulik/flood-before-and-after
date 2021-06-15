@@ -28,8 +28,12 @@ function DisplayPhotos(props) {
                 <div className="photos__container" key={props.id}>
                     <p>{mousePos.x}</p>
                     <p>{mousePos.y}</p>
-                    <h2 className="photos__h2"> {props.title} </h2>
-                    <img className="photos__floodImg" alt={props.alt} src={props.relativePath_floodStage}></img>
+                    <div className="photos__container--normal" style={{
+                        backgroundImage: `url(${props.relativePath_normalStage})`,
+                    }} />
+                    <div className="photos__container--flood" style={{
+                        backgroundImage: `url(${props.relativePath_floodStage})`,
+                    }} />
                 </div>
             ))}
         </div>
