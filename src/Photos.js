@@ -36,7 +36,7 @@ function DisplayPhotos(props) {
                 </div>
             ))}
         </div>
-    );
+    ); 
 
 }
 
