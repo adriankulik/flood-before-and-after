@@ -26,10 +26,9 @@ function DisplayPhotos(props) {
         <div className="photos">
             {photo.map((props) => (
                 <div className="photos__container" key={props.id}>
-                    <p>{mousePos.x}</p>
-                    <p>{mousePos.y}</p>
                     <div className="photos__container--normal" style={{
                         backgroundImage: `url(${props.relativePath_normalStage})`,
+                        left: mousePos.x + `px`,
                     }} />
                     <div className="photos__container--flood" style={{
                         backgroundImage: `url(${props.relativePath_floodStage})`,
